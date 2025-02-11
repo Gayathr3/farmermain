@@ -1,0 +1,48 @@
+/* Main Container */
+.login-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://organicabiotech.com/wp-content/uploads/2021/10/organic-farming-min.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(2px); /* Optional: Add a slight blur */
+}
+
+/* Header (if needed - adjust styling as desired) */
+.header {
+  position: absolute; /* Or fixed if you want it to stay in place on scroll */
+  top: 20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 36px;
+  font-weight: bold;
+  color: #981818;
+  text-shadow: 2px 2px 5px rgba(6, 113, 95, 0.5);
+  z-index: 1; /* Ensure it's above the background */
+}
+
+
+/* Login Card */
+.login-card {
+  width: 400px; /* Adjust as needed */
+  max-width: 90%; /* For smaller screens */
+  padding: 30px;
+  border-radius: 8px;
+  background-color: rgba(83, 10, 10, 0.9); /* Slightly transparent white */
+  box-shadow: 0 4px 8px rgba(11, 130, 35, 0.1); /* Softer shadow */
+  text-align: center;
+  z-index: 1; /* Ensure it's above the background */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-card {
+    padding: 20px; /* Adjust padding on smaller screens */
+  }
+
+}

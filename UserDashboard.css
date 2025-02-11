@@ -1,0 +1,61 @@
+/* User Dashboard Styling */
+.user-dashboard-container {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://as1.ftcdn.net/v2/jpg/02/28/76/20/1000_F_228762020_md5J7oyDKx8ydqrGyN4Pe173n9j51dQe.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Dashboard Button Container */
+.user-dashboard-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    z-index: 2;
+}
+
+/* Button Styling */
+.user-dashboard-buttons button {
+    width: 200px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background: #28a745;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.user-dashboard-buttons button:hover {
+    background: #218838;
+}
+
+/* Background Overlay */
+.user-dashboard-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
